@@ -3,5 +3,6 @@
 FILE="/etc/proxy/start.sh"
 
 if [ -f "$FILE" ]; then
-  chmod +x "$FILE" && "$FILE"
+  cp "$FILE" /usr/bin/start
+  chmod +x /usr/bin/start && /usr/bin/start
 fi
